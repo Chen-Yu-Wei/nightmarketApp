@@ -25,8 +25,6 @@
 		40C3B925267F109200C05096 /* 截圖 2021-06-20 上午1.01.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C3B924267F109200C05096 /* 截圖 2021-06-20 上午1.01.16.png */; };
 		40C3B9272680367C00C05096 /* SceneKit Asset Catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C3B9262680367C00C05096 /* SceneKit Asset Catalog.scnassets */; };
 		98C447832578CC96003B6CD6 /* CommendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C447822578CC96003B6CD6 /* CommendTableViewController.swift */; };
-		98DADD3C257A6A450065400D /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DADD3B257A6A450065400D /* CommentModel.swift */; };
-		98DADD3E257A6A7A0065400D /* HomeComment1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DADD3D257A6A7A0065400D /* HomeComment1Model.swift */; };
 		B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C743F2521D35E00F3BCA6 /* HomeModel.swift */; };
 		B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C74412521D41D00F3BCA6 /* LocationModel.swift */; };
 		B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF01E2484ED0900B3E5F9 /* AppDelegate.swift */; };
@@ -37,12 +35,6 @@
 		B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */; };
 		B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0522484EE1200B3E5F9 /* Register.swift */; };
 		B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */; };
-		B0BF970F257910C500D259A9 /* Menu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF970E257910C500D259A9 /* Menu1Model.swift */; };
-		B0BF9713257911D100D259A9 /* HomeMenu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */; };
-		B0BF971525792DD900D259A9 /* HomeMenu2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */; };
-		B0BF971725792FD100D259A9 /* HomeMenu3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF971625792FD100D259A9 /* HomeMenu3Model.swift */; };
-		B0BF971B2579300000D259A9 /* HomeMenu4Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF971A2579300000D259A9 /* HomeMenu4Model.swift */; };
-		B0BF971D2579301700D259A9 /* HomeMenu5Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF971C2579301700D259A9 /* HomeMenu5Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +56,6 @@
 		40C3B924267F109200C05096 /* 截圖 2021-06-20 上午1.01.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "截圖 2021-06-20 上午1.01.16.png"; sourceTree = "<group>"; };
 		40C3B9262680367C00C05096 /* SceneKit Asset Catalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Asset Catalog.scnassets"; sourceTree = "<group>"; };
 		98C447822578CC96003B6CD6 /* CommendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommendTableViewController.swift; sourceTree = "<group>"; };
-		98DADD3B257A6A450065400D /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
-		98DADD3D257A6A7A0065400D /* HomeComment1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComment1Model.swift; sourceTree = "<group>"; };
 		B01C743F2521D35E00F3BCA6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		B01C74412521D41D00F3BCA6 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		B07DF01B2484ED0900B3E5F9 /* nightmarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nightmarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,12 +68,6 @@
 		B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAccount.swift; sourceTree = "<group>"; };
 		B07DF0522484EE1200B3E5F9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
-		B0BF970E257910C500D259A9 /* Menu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1Model.swift; sourceTree = "<group>"; };
-		B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu1Model.swift; sourceTree = "<group>"; };
-		B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu2Model.swift; sourceTree = "<group>"; };
-		B0BF971625792FD100D259A9 /* HomeMenu3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu3Model.swift; sourceTree = "<group>"; };
-		B0BF971A2579300000D259A9 /* HomeMenu4Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu4Model.swift; sourceTree = "<group>"; };
-		B0BF971C2579301700D259A9 /* HomeMenu5Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu5Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,14 +155,6 @@
 				408F3D7925226DC100A136E5 /* ARViewController.swift */,
 				1D2E257D257782010022502F /* MenuTableViewController.swift */,
 				98C447822578CC96003B6CD6 /* CommendTableViewController.swift */,
-				B0BF970E257910C500D259A9 /* Menu1Model.swift */,
-				B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */,
-				B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */,
-				B0BF971625792FD100D259A9 /* HomeMenu3Model.swift */,
-				B0BF971A2579300000D259A9 /* HomeMenu4Model.swift */,
-				B0BF971C2579301700D259A9 /* HomeMenu5Model.swift */,
-				98DADD3B257A6A450065400D /* CommentModel.swift */,
-				98DADD3D257A6A7A0065400D /* HomeComment1Model.swift */,
 				40A76C1B2639589A00BDCA53 /* storeModel.swift */,
 				40A76C232639597B00BDCA53 /* store.swift */,
 				405330B2265F9F3500B8D7DF /* menu.swift */,
@@ -225,7 +201,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B07DF0162484ED0900B3E5F9 /* Build configuration list for PBXProject "nightmarketAppApp" */;
+			buildConfigurationList = B07DF0162484ED0900B3E5F9 /* Build configuration list for PBXProject "nightmarketApp" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,31 +245,23 @@
 			files = (
 				B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */,
 				40A76C1C2639589A00BDCA53 /* storeModel.swift in Sources */,
-				98DADD3E257A6A7A0065400D /* HomeComment1Model.swift in Sources */,
 				40A76C242639597B00BDCA53 /* store.swift in Sources */,
 				98C447832578CC96003B6CD6 /* CommendTableViewController.swift in Sources */,
-				B0BF971725792FD100D259A9 /* HomeMenu3Model.swift in Sources */,
 				1D2E257E257782010022502F /* MenuTableViewController.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
 				4098AC72265FF8F6008670AB /* menuModel.swift in Sources */,
 				1D528DB52522018500716C12 /* TabBarController.swift in Sources */,
-				98DADD3C257A6A450065400D /* CommentModel.swift in Sources */,
 				405330B3265F9F3500B8D7DF /* menu.swift in Sources */,
-				B0BF971B2579300000D259A9 /* HomeMenu4Model.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
 				4098AC7426629CF3008670AB /* MenuTableViewCell.swift in Sources */,
-				B0BF971525792DD900D259A9 /* HomeMenu2Model.swift in Sources */,
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
 				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
-				B0BF970F257910C500D259A9 /* Menu1Model.swift in Sources */,
 				40A76C072637ED2700BDCA53 /* StoreTableViewController.swift in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
-				B0BF971D2579301700D259A9 /* HomeMenu5Model.swift in Sources */,
 				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,
 				408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */,
 				40AB25232526EDB80039E4D2 /* TViewDetailViewController.swift in Sources */,
-				B0BF9713257911D100D259A9 /* HomeMenu1Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B07DF0162484ED0900B3E5F9 /* Build configuration list for PBXProject "nightmarketAppApp" */ = {
+		B07DF0162484ED0900B3E5F9 /* Build configuration list for PBXProject "nightmarketApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B07DF0432484ED0A00B3E5F9 /* Debug */,
