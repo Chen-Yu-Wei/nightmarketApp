@@ -13,7 +13,7 @@ class CommendTableViewController: UITableViewController,HomeModelProtocol {
     var receive = 0
     @IBOutlet var listTableView: UITableView!
     var feedItems: NSArray = NSArray()
-        var selectedLocation : CommentModel = CommentModel()
+       // var selectedLocation : CommentModel = CommentModel()
      func itemsDownloaded(items: NSArray) {
          feedItems = items
          self.listTableView.reloadData()
@@ -26,8 +26,8 @@ class CommendTableViewController: UITableViewController,HomeModelProtocol {
      }
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-         let item: CommentModel = feedItems[indexPath.row] as! CommentModel
-         cell.textLabel?.text = "評論：" + item.tit!
+         //let item: CommentModel = feedItems[indexPath.row] as! CommentModel
+      //   cell.textLabel?.text = "評論：" + item.tit!
              return cell
      }
     override func awakeFromNib() {
@@ -38,27 +38,6 @@ class CommendTableViewController: UITableViewController,HomeModelProtocol {
         super.viewDidLoad()
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
-        if (receive == 0){
-            let homemenu1Model = HomeComment1Model()
-            homemenu1Model.delegate = self
-            homemenu1Model.downloadItems()
-        }else if(receive == 1){
-            let homemenu2Model = HomeMenu2Model()
-            homemenu2Model.delegate = self
-            homemenu2Model.downloadItems()
-        }else if(receive == 2){
-            let homemenu3Model = HomeMenu3Model()
-            homemenu3Model.delegate = self
-            homemenu3Model.downloadItems()
-        }else if(receive == 3){
-            let homemenu4Model = HomeMenu4Model()
-            homemenu4Model.delegate = self
-            homemenu4Model.downloadItems()
-        }else if(receive == 4){
-            let homemenu5Model = HomeMenu5Model()
-            homemenu5Model.delegate = self
-            homemenu5Model.downloadItems()
-        }
         
         
         // Do any additional setup after loading the view.
