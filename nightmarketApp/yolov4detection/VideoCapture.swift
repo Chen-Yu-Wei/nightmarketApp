@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import CoreVideo
 
-public protocol VideoCaptureDelegate: class {
+public protocol VideoCaptureDelegate: AnyObject {
     func videoCapture(_ capture: VideoCapture, didCaptureVideoFrame: CVPixelBuffer?, timestamp: CMTime)
 }
 
@@ -97,7 +97,7 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
         // framerate.
         let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
         let deltaTime = timestamp - lastTimestamp
-        if deltaTime >= CMTimeMake(1, Int32(fps)) {
+        if deltaTime >= CMTimeMake(value:1, timescale: Int32(fps)) {
             lastTimestamp = timestamp
             let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
             //        print("fps\(timestamp)")

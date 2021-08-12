@@ -42,10 +42,10 @@ class ARViewController: UIViewController {
         return label
     }()
     
-    let  videoPreview: UIView = {
+    /*let  videoPreview: UIView = {
         let view = UIView()
         return view
-    }()
+    }()*/
     
     
     let fadeDuration: TimeInterval = 0.3
@@ -101,10 +101,10 @@ class ARViewController: UIViewController {
         label.text = "Move camera around to detect signboard"
         //yolov4
         timeLabel.frame = CGRect(x: 0, y: UIScreen.main.bounds.size.height - self.labelHeight, width: UIScreen.main.bounds.size.width, height: self.labelHeight)
-        videoPreview.frame = self.view.frame
+        //sceneView.frame = self.view.frame
     
         view.addSubview(timeLabel)
-        view.addSubview(videoPreview)
+        //view.addSubview(sceneView)
     
         timeLabel.text = ""
     
@@ -145,19 +145,19 @@ class ARViewController: UIViewController {
         videoCapture.delegate = self
         videoCapture.fps = 50
         weak var welf = self
-        
+     //log問題
         videoCapture.setUp(sessionPreset: AVCaptureSession.Preset.vga640x480) { success in
             if success {
                 // Add the video preview into the UI.
                 if let previewLayer = welf?.videoCapture.previewLayer {
-                    welf?.videoPreview.layer.addSublayer(previewLayer)
+                    welf?.sceneView.layer.addSublayer(previewLayer)
                     welf?.resizePreviewLayer()
                 }
 
                 
                 // Add the bounding box layers to the UI, on top of the video preview.
                 DispatchQueue.main.async {
-                    guard let  boxes = welf?.boundingBoxes,let videoLayer  = welf?.videoPreview.layer else {return}
+                    guard let  boxes = welf?.boundingBoxes,let videoLayer  = welf?.sceneView.layer else {return}
                     for box in boxes {
                         box.addToLayer(videoLayer)
                     }
@@ -185,7 +185,7 @@ class ARViewController: UIViewController {
     }
     
     func resizePreviewLayer() {
-        videoCapture.previewLayer?.frame = videoPreview.bounds
+        videoCapture.previewLayer?.frame = sceneView.bounds
     }
     
     func predict(pixelBuffer: CVPixelBuffer) {
@@ -232,7 +232,8 @@ class ARViewController: UIViewController {
         }
     }
 
-    func show(predictions: [YOLO.Prediction]) {
+    func show(predictions: [YOLO.Prediction]) -> String{
+        let name:String?
         for i in 0..<boundingBoxes.count {
             if i < predictions.count {
                 let prediction = predictions[i]
@@ -260,10 +261,12 @@ class ARViewController: UIViewController {
                 let label = String(format: "%@ %.1f", labels[prediction.classIndex], prediction.score)
                 let color = colors[prediction.classIndex]
                 boundingBoxes[i].show(frame: rect, label: label, color: color)
+                name = labels[prediction.classIndex]
             } else {
                 boundingBoxes[i].hide()
             }
         }
+        return name!
     }
     
     func measureFPS() -> Double {
@@ -305,12 +308,12 @@ class ARViewController: UIViewController {
     }
     //detecting
     func resetTrackingConfiguration() {
-        guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
+      // guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
         let configuration = ARWorldTrackingConfiguration()
-        configuration.detectionImages = referenceImages
+        //configuration.detectionImages = referenceImages
         let options: ARSession.RunOptions = [.resetTracking, .removeExistingAnchors]
         sceneView.session.run(configuration, options: options)
-        //label.text = "Move camera around to detect images"
+        label.text = "Move camera around to detect images"
     }
 }
 //after detect
@@ -356,17 +359,17 @@ extension ARViewController: ARSCNViewDelegate {
           //}
         //self.resetTrackingConfiguration()
   }
-    func getPlaneNode(withReferenceImage image: ARReferenceImage) -> SCNNode {
+   /* func getPlaneNode(withReferenceImage image: ARReferenceImage) -> SCNNode {
         let plane = SCNPlane(width: image.physicalSize.width,
                              height: image.physicalSize.height)
         let node = SCNNode(geometry: plane)
         return node
-    }
+    }*/
     
     func getNode(withImageName name: String) -> SCNNode {
         var node = SCNNode()
         switch name {
-        case "Book":
+        case "2":
             node = bookNode
         case "image27":
             node = bookNode
