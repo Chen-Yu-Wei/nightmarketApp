@@ -233,7 +233,7 @@ class ARViewController: UIViewController {
     }
 
     func show(predictions: [YOLO.Prediction]) -> String{
-        let name:String?
+        var name:String?
         for i in 0..<boundingBoxes.count {
             if i < predictions.count {
                 let prediction = predictions[i]

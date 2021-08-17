@@ -14,7 +14,6 @@
 		408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F3D7925226DC100A136E5 /* ARViewController.swift */; };
 		4098AC72265FF8F6008670AB /* menuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098AC71265FF8F6008670AB /* menuModel.swift */; };
 		4098AC7426629CF3008670AB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098AC7326629CF3008670AB /* MenuTableViewCell.swift */; };
-		40A19CAA26B6949B00A38F40 /* yolov4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CA926B6949B00A38F40 /* yolov4.mlmodel */; };
 		40A19CB326B694CD00A38F40 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CAB26B694CC00A38F40 /* VideoCapture.swift */; };
 		40A19CB426B694CD00A38F40 /* Mish.metal in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CAC26B694CC00A38F40 /* Mish.metal */; };
 		40A19CB526B694CD00A38F40 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CAD26B694CC00A38F40 /* UIImage+CVPixelBuffer.swift */; };
@@ -23,6 +22,7 @@
 		40A19CB826B694CD00A38F40 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CB026B694CD00A38F40 /* Helpers.swift */; };
 		40A19CB926B694CD00A38F40 /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CB126B694CD00A38F40 /* YOLO.swift */; };
 		40A19CBA26B694CD00A38F40 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CB226B694CD00A38F40 /* BoundingBox.swift */; };
+		40A19CBE26CB6A3600A38F40 /* yolov4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 40A19CBD26CB6A3600A38F40 /* yolov4.mlmodel */; };
 		40A76C072637ED2700BDCA53 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76C062637ED2700BDCA53 /* StoreTableViewController.swift */; };
 		40A76C1C2639589A00BDCA53 /* storeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76C1B2639589A00BDCA53 /* storeModel.swift */; };
 		40A76C242639597B00BDCA53 /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A76C232639597B00BDCA53 /* store.swift */; };
@@ -54,7 +54,6 @@
 		408F3D7925226DC100A136E5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		4098AC71265FF8F6008670AB /* menuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuModel.swift; sourceTree = "<group>"; };
 		4098AC7326629CF3008670AB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		40A19CA926B6949B00A38F40 /* yolov4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov4.mlmodel; sourceTree = "<group>"; };
 		40A19CAB26B694CC00A38F40 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		40A19CAC26B694CC00A38F40 /* Mish.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Mish.metal; sourceTree = "<group>"; };
 		40A19CAD26B694CC00A38F40 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		40A19CB026B694CD00A38F40 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		40A19CB126B694CD00A38F40 /* YOLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
 		40A19CB226B694CD00A38F40 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		40A19CBD26CB6A3600A38F40 /* yolov4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov4.mlmodel; sourceTree = "<group>"; };
 		40A76C062637ED2700BDCA53 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
 		40A76C1B2639589A00BDCA53 /* storeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeModel.swift; sourceTree = "<group>"; };
 		40A76C232639597B00BDCA53 /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		40A19CA726B66AA900A38F40 /* yolov4detection */ = {
 			isa = PBXGroup;
 			children = (
-				40A19CA926B6949B00A38F40 /* yolov4.mlmodel */,
+				40A19CBD26CB6A3600A38F40 /* yolov4.mlmodel */,
 				40A19CB226B694CD00A38F40 /* BoundingBox.swift */,
 				40A19CAF26B694CD00A38F40 /* CVPiexlBuffer+Helpers.swift */,
 				40A19CB026B694CD00A38F40 /* Helpers.swift */,
@@ -301,13 +301,13 @@
 				405330B3265F9F3500B8D7DF /* menu.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
 				4098AC7426629CF3008670AB /* MenuTableViewCell.swift in Sources */,
+				40A19CBE26CB6A3600A38F40 /* yolov4.mlmodel in Sources */,
 				40A19CB426B694CD00A38F40 /* Mish.metal in Sources */,
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
 				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
 				40A19CB526B694CD00A38F40 /* UIImage+CVPixelBuffer.swift in Sources */,
 				40A76C072637ED2700BDCA53 /* StoreTableViewController.swift in Sources */,
-				40A19CAA26B6949B00A38F40 /* yolov4.mlmodel in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
 				40A19CBA26B694CD00A38F40 /* BoundingBox.swift in Sources */,
 				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,
